@@ -9,13 +9,17 @@ public class Filme extends Midia {
 
     public Filme(String titulo, int ano, String genero, double duracao, String[] elenco, String diretor, String produtor) {
         super(titulo, ano, genero);
-        this.duracao = duracao;
         this.elenco = elenco;
         this.diretor = diretor;
         Produtor = produtor;
     }
 
     public double getDuracao() {
+        if(this.duracao>120){
+            this.tipo="Longa";
+        }else{
+            this.tipo= "Curta";
+        }
         return duracao;
     }
 
