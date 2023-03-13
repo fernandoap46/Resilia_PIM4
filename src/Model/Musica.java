@@ -1,0 +1,39 @@
+package Model;
+
+public class Musica extends Midia{
+    private double duracao;
+    private String artista;
+    private int nota;
+
+    public Musica(String titulo, int ano, String genero, double duracao, String artista, int nota) {
+        super(titulo, ano, genero);
+        this.duracao = duracao;
+        this.artista = artista;
+        this.nota = nota;
+    }
+
+    public double getDuracao() {
+        return duracao;
+    }
+
+    public void setDuracao(double duracao) {
+        this.duracao = duracao;
+    }
+
+    public String getArtista() {
+        return artista;
+    }
+
+    public void setArtista(String artista) {
+        this.artista = artista;
+    }
+
+    public int getNota() {
+        return nota;
+    }
+
+    public void setNota(int nota) {
+        this.nota = nota;
+    }
+ 
+}

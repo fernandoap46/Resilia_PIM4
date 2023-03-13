@@ -1,12 +1,12 @@
 package Model;
 
 public class Artista {
-    String nome;
-    String data_de_nascimento;
-    Premiação premiação;
-    String Genero;
+    private String nome;
+    private String data_de_nascimento;
+    private Premiacao premiação;
+    private String Genero;
 
-    public Artista(String nome, String data_de_nascimento, Premiação premiação, String genero) {
+    public Artista(String nome, String data_de_nascimento, Premiacao premiação, String genero) {
         this.nome = nome;
         this.data_de_nascimento = data_de_nascimento;
         this.premiação = premiação;
@@ -29,11 +29,11 @@ public class Artista {
         this.data_de_nascimento = data_de_nascimento;
     }
 
-    public Premiação getPremiação() {
+    public Premiacao getPremiação() {
         return premiação;
     }
 
-    public void setPremiação(Premiação premiação) {
+    public void setPremiação(Premiacao premiação) {
         this.premiação = premiação;
     }
 
