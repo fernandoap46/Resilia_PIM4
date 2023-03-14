@@ -13,6 +13,16 @@ public class Artista {
         Genero = genero;
     }
 
+    @Override
+    public String toString() {
+        return "Artista{" +
+                "nome='" + nome + '\'' +
+                ", data_de_nascimento='" + data_de_nascimento + '\'' +
+                ", premiação=" + premiação +
+                ", Genero='" + Genero + '\'' +
+                '}';
+    }
+
     public String getNome() {
         return nome;
     }
