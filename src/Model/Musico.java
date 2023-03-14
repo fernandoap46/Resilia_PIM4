@@ -8,6 +8,13 @@ public class Musico extends Artista{
         this.atuacao = atuacao;
     }
 
+    @Override
+    public String toString() {
+        return "Musico{" +
+                "atuacao='" + atuacao + '\'' +
+                '}';
+    }
+
     public String getAtuacao() {
         return atuacao;
     }
