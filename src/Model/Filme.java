@@ -1,5 +1,7 @@
 package Model;
 
+import java.util.Arrays;
+
 public class Filme extends Midia {
     private double duracao;
     private String tipo;
@@ -7,8 +9,10 @@ public class Filme extends Midia {
     private String diretor;
     private String Produtor;
 
-    public Filme(String titulo, int ano, String genero, double duracao, String[] elenco, String diretor, String produtor) {
+    public Filme(String titulo, String ano, String genero, double duracao, String tipo, String[] elenco, String diretor, String produtor) {
         super(titulo, ano, genero);
+        this.duracao = duracao;
+        this.tipo = tipo;
         this.elenco = elenco;
         this.diretor = diretor;
         Produtor = produtor;
@@ -21,6 +25,17 @@ public class Filme extends Midia {
             this.tipo= "Curta";
         }
         return duracao;
+    }
+
+    @Override
+    public String toString() {
+        return "Filme{" +
+                "duracao=" + duracao +
+                ", tipo='" + tipo + '\'' +
+                ", elenco=" + Arrays.toString(elenco) +
+                ", diretor='" + diretor + '\'' +
+                ", Produtor='" + Produtor + '\'' +
+                '}';
     }
 
     public void setDuracao(double duracao) {
