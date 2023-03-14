@@ -2,13 +2,14 @@ package Model;
 
 import java.util.Arrays;
 
+// -----------------------------------Atributo Classe Filme-------------------------------- //
 public class Filme extends Midia {
     private double duracao;
     private String tipo;
     private String[] elenco;
     private String diretor;
     private String Produtor;
-
+    // -----------------------------------Construtor-------------------------------- //
     public Filme(String titulo, String ano, String genero, double duracao, String tipo, String[] elenco, String diretor, String produtor) {
         super(titulo, ano, genero);
         this.duracao = duracao;
