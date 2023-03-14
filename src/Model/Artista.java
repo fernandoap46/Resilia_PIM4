@@ -1,11 +1,13 @@
 package Model;
 
+//---------------------------------Atributos Classe Artista------------------------------------------
 public class Artista {
     private String nome;
     private String data_de_nascimento;
     private Premiacao premiação;
     private String Genero;
 
+    //---------------------------------Construtor-----------------------------------------------------
     public Artista(String nome, String data_de_nascimento, Premiacao premiação, String genero) {
         this.nome = nome;
         this.data_de_nascimento = data_de_nascimento;
