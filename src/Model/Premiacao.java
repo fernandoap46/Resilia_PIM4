@@ -9,6 +9,14 @@ public class Premiacao {
         this.ano_premiacao = ano_premiacao;
     }
 
+    @Override
+    public String toString() {
+        return "Premiacao{" +
+                "premiacao='" + premiacao + '\'' +
+                ", ano_premiacao=" + ano_premiacao +
+                '}';
+    }
+
     public String getPremiacao() {
         return premiacao;
     }
