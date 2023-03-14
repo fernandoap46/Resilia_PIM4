@@ -2,13 +2,22 @@ package Model;
 
 public class Midia {
     private String titulo;
-    private int ano;
+    private String ano;
     private String genero;
 
-    public Midia(String titulo, int ano, String genero) {
+    public Midia(String titulo, String ano, String genero) {
         this.titulo = titulo;
         this.ano = ano;
         this.genero = genero;
+    }
+
+    @Override
+    public String toString() {
+        return "Midia{" +
+                "titulo='" + titulo + '\'' +
+                ", ano='" + ano + '\'' +
+                ", genero='" + genero + '\'' +
+                '}';
     }
 
     public String getTitulo() {
@@ -19,11 +28,11 @@ public class Midia {
         this.titulo = titulo;
     }
 
-    public int getAno() {
+    public String getAno() {
         return ano;
     }
 
-    public void setAno(int ano) {
+    public void setAno(String ano) {
         this.ano = ano;
     }
 
@@ -34,5 +43,4 @@ public class Midia {
     public void setGenero(String genero) {
         this.genero = genero;
     }
-
 }
