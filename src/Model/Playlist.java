@@ -1,14 +1,14 @@
 package Model;
 
 import java.util.*;
-
+// -----------------------------------Atributo Classe Playlist-------------------------------- //
 public class Playlist {
     private LinkedList<Midia> midias;
     private boolean ordem_de_execucao;
     private Midia midia_atual;
 
     private ListIterator <Midia> iterator;
-
+    // -----------------------------------Cnstrutor--------------------------------------- //
     public Playlist(Collection<Midia> midias, boolean ordem_de_execucao) {
         this.midias = new LinkedList<>(midias);
         this.ordem_de_execucao = ordem_de_execucao;
@@ -32,6 +32,8 @@ public class Playlist {
         this.ordem_de_execucao = ordem_de_execucao;
     }
 
+    // -----------------------------------Metodo atual-------------------------------- //
+
     public Midia getMidia_atual() {
         return midia_atual;
     }
@@ -50,7 +52,7 @@ public class Playlist {
     public ListIterator<Midia> getIterator() {
         return iterator;
     }
-
+    // -----------------------------------Metodo proxima midia-------------------------------- //
     public Midia proxima_midia(){
         if (iterator.hasNext()){
             midia_atual=iterator.next();
@@ -73,6 +75,8 @@ public class Playlist {
 
 
     }
+
+    // -----------------------------------Metodo anterior-------------------------------- //
     public Midia midia_anterior(){
         if (iterator.hasPrevious()){
             midia_atual=iterator.previous();
@@ -99,6 +103,3 @@ public class Playlist {
 
 }
 
-    //private ArrayList<Midia> midias;
-    //private String ordem_de_execucao;
-   // private String midia_atual;

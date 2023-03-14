@@ -1,10 +1,12 @@
 package Model;
 
+// -----------------------------------Atributo Classe Midia-------------------------------- //
 public class Midia {
     private String titulo;
     private String ano;
     private String genero;
 
+    // -----------------------------------Construtor------------------------------------- //
     public Midia(String titulo, String ano, String genero) {
         this.titulo = titulo;
         this.ano = ano;

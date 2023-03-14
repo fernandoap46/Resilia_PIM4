@@ -1,10 +1,11 @@
 package Model;
-
+// -----------------------------------Atributo Classe Musica extend Midia------------------------------- //
 public class Musica extends Midia{
     private double duracao;
     private String artista;
     private int nota;
 
+    // -----------------------------------Construtor---------------------------------------- //
     public Musica(String titulo, String ano, String genero, double duracao, String artista, int nota) {
         super(titulo, ano, genero);
         this.duracao = duracao;

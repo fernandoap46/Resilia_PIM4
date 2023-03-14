@@ -1,9 +1,11 @@
 package Model;
 
+// -----------------------------------Classe Preimação para detalhar premio-------------------------------- //
 public class Premiacao {
     private String premiacao;
     private int ano_premiacao;
 
+    // -----------------------------------Construtor-------------------------------- //
     public Premiacao(String premiacao, int ano_premiacao) {
         this.premiacao = premiacao;
         this.ano_premiacao = ano_premiacao;

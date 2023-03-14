@@ -1,8 +1,10 @@
 package Model;
 
+// -----------------------------------Atributo Classe Musico Extend Artista-------------------------------- //
 public class Musico extends Artista{
     String atuacao;
 
+    // -----------------------------------Construtor------------------------------------------ //
     public Musico(String nome, String data_de_nascimento, Premiacao premiação, String genero, String atuacao) {
         super(nome, data_de_nascimento, premiação, genero);
         this.atuacao = atuacao;

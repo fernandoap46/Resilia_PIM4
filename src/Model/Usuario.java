@@ -1,9 +1,11 @@
 package Model;
 
+// -----------------------------------Classe usuario-------------------------------- //
 public class Usuario {
     private String apelido;
     private String senha;
 
+    // -----------------------------------Construtor-------------------------------- //
     public Usuario(String apelido, String senha) {
         this.apelido = apelido;
         this.senha = senha;
