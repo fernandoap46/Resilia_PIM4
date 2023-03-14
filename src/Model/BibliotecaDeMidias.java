@@ -62,7 +62,7 @@ public class BibliotecaDeMidias {
             System.out.println("playlist: " + midias.get(i));
 
         }
-        System.out.println("Musica tocando");
+        System.out.println("\nMusica tocando");
 //-------------------Retorna posição atual------------------------------------------------- //
         System.out.println(this.playlist.getMidia_atual());
 
