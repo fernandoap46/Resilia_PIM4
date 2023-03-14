@@ -5,11 +5,20 @@ public class Musica extends Midia{
     private String artista;
     private int nota;
 
-    public Musica(String titulo, int ano, String genero, double duracao, String artista, int nota) {
+    public Musica(String titulo, String ano, String genero, double duracao, String artista, int nota) {
         super(titulo, ano, genero);
         this.duracao = duracao;
         this.artista = artista;
         this.nota = nota;
+    }
+
+    @Override
+    public String toString() {
+        return "Musica{" +
+                "duracao=" + duracao +
+                ", artista='" + artista + '\'' +
+                ", nota=" + nota +
+                '}';
     }
 
     public double getDuracao() {
