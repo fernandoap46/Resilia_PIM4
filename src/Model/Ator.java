@@ -8,6 +8,13 @@ public class Ator extends Artista {
         this.formacao = formacao;
     }
 
+    @Override
+    public String toString() {
+        return "Ator{" +
+                "formacao='" + formacao + '\'' +
+                '}';
+    }
+
     public String getFormacao() {
         return formacao;
     }
