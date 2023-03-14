@@ -1,21 +1,34 @@
 package Model;
 
-public class BibliotecaDeMidias {
-    Midia midias;
-    Usuario usuario;
-    Playlist playlist;
+import com.sun.source.tree.ReturnTree;
 
-    public BibliotecaDeMidias(Midia midias, Usuario usuario, Playlist playlist) {
+import java.util.ArrayList;
+
+public class BibliotecaDeMidias {
+    private ArrayList<Midia> midias;
+    private Usuario usuario;
+    private Playlist playlist;
+
+    public BibliotecaDeMidias(ArrayList<Midia> midias, Usuario usuario) {
         this.midias = midias;
         this.usuario = usuario;
-        this.playlist = playlist;
+        this.playlist = new Playlist(midias,true);
     }
 
-    public Midia getMidias() {
+    @Override
+    public String toString() {
+        return "BibliotecaDeMidias{" +
+                "midias=" + midias +
+                ", usuario=" + usuario +
+                ", playlist=" + playlist +
+                '}';
+    }
+
+    public ArrayList<Midia> getMidias() {
         return midias;
     }
 
-    public void setMidias(Midia midias) {
+    public void setMidias(ArrayList<Midia> midias) {
         this.midias = midias;
     }
 
@@ -34,4 +47,25 @@ public class BibliotecaDeMidias {
     public void setPlaylist(Playlist playlist) {
         this.playlist = playlist;
     }
+    public void tocar_playlist_music(){
+
+
+        System.out.println(midias);
+        System.out.println(midias.size());
+
+        System.out.println("\n  Minha playlist musica  \n");
+        for (int i = 0; i < midias.size(); i++) {
+            System.out.println("playlist: " + midias.get(i));
+
+        }
+        System.out.println("Musica tocando");
+
+        System.out.println(this.playlist.getMidia_atual());
+
+
+
+    }
+
+
+
 }
