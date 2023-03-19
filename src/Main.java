@@ -1,7 +1,4 @@
-import Model.BibliotecaDeMidias;
-import Model.Midia;
-import Model.Playlist;
-import Model.Usuario;
+import Model.*;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -17,6 +14,13 @@ public class Main {
         //-------------Menu inicial-------------------------------------------------
 
         System.out.println("\n Biblioteca de Midias \n"+"\n Digite o que deseja \n");
+
+
+        ArrayList<Ator> atores = new ArrayList<>();
+        atores.add(new Ator("Fernando","15/07/1991","masc","ator"));
+
+        ArrayList<Musico> musicos = new ArrayList<>();
+        musicos.add(new Musico("","","",""));
 
         ArrayList<Midia> midias = new ArrayList<>();
         //-------------Dados mocados-------------------------------------------------

@@ -4,14 +4,14 @@ package Model;
 public class Artista {
     private String nome;
     private String data_de_nascimento;
-    private Premiacao premiação;
+    //private Premiacao premiação;
     private String Genero;
 
     //---------------------------------Construtor-----------------------------------------------------
-    public Artista(String nome, String data_de_nascimento, Premiacao premiação, String genero) {
+    public Artista(String nome, String data_de_nascimento, String genero) {
         this.nome = nome;
         this.data_de_nascimento = data_de_nascimento;
-        this.premiação = premiação;
+        //this.premiação = premiação;
         Genero = genero;
     }
 
@@ -20,7 +20,6 @@ public class Artista {
         return "Artista{" +
                 "nome='" + nome + '\'' +
                 ", data_de_nascimento='" + data_de_nascimento + '\'' +
-                ", premiação=" + premiação +
                 ", Genero='" + Genero + '\'' +
                 '}';
     }
@@ -39,14 +38,6 @@ public class Artista {
 
     public void setData_de_nascimento(String data_de_nascimento) {
         this.data_de_nascimento = data_de_nascimento;
-    }
-
-    public Premiacao getPremiação() {
-        return premiação;
-    }
-
-    public void setPremiação(Premiacao premiação) {
-        this.premiação = premiação;
     }
 
     public String getGenero() {

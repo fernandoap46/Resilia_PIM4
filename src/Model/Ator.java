@@ -1,11 +1,15 @@
 package Model;
 
+import java.util.ArrayList;
+
 // -------------------------------------Atributo Classe Ator extend Artista-------------------------------- //
 public class Ator extends Artista {
     String formacao;
     // -------------------------------------Construtor------------------------------------------------------ //
-    public Ator(String nome, String data_de_nascimento, Premiacao premiação, String genero, String formacao) {
-        super(nome, data_de_nascimento, premiação, genero);
+
+
+    public Ator(String nome, String data_de_nascimento, String genero, String formacao) {
+        super(nome, data_de_nascimento, genero);
         this.formacao = formacao;
     }
 
@@ -23,6 +27,4 @@ public class Ator extends Artista {
     public void setFormacao(String formacao) {
         this.formacao = formacao;
     }
-
-
 }
